@@ -1,0 +1,135 @@
+{
+  "kind": "build_request",
+  "title": "Create AI-powered task automation system",
+  "projectName": "Flower",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "text": "Create a task submission interface where users can input instructions for AI to execute human activities",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-user-1"
+        ],
+        "quotes": [
+          "A app named flower which does all human activities with the help of artificial intelligence as given instructions"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Users can enter natural language instructions for tasks",
+        "Interface provides clear feedback on instruction submission",
+        "Instructions are validated before submission"
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "text": "Implement backend task processing system that parses and categorizes user instructions into executable task types",
+      "target": "backend",
+      "source": {
+        "messageIds": [
+          "msg-user-1"
+        ],
+        "quotes": [
+          "does all human activities with the help of artificial intelligence as given instructions"
+        ]
+      },
+      "acceptanceCriteria": [
+        "System categorizes instructions into task types (e.g., scheduling, data processing, content generation)",
+        "Instructions are stored with metadata including timestamp and user identity",
+        "Invalid or unclear instructions return appropriate error messages"
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "text": "Create task execution engine that processes categorized tasks and generates results",
+      "target": "backend",
+      "source": {
+        "messageIds": [
+          "msg-user-1"
+        ],
+        "quotes": [
+          "does all human activities with the help of artificial intelligence"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Engine executes tasks based on their category and parameters",
+        "Results are generated and stored with execution metadata",
+        "System tracks task status (pending, in-progress, completed, failed)"
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "text": "Build task dashboard displaying submitted tasks, their status, and execution results in real-time",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-user-1"
+        ],
+        "quotes": [
+          "with speed faster than human"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Dashboard shows list of all tasks with status indicators",
+        "Users can view detailed results for completed tasks",
+        "Interface updates automatically when task status changes",
+        "Performance metrics display execution speed for each task"
+      ]
+    },
+    {
+      "id": "REQ-5",
+      "text": "Implement performance optimization system that prioritizes and executes tasks efficiently",
+      "target": "backend",
+      "source": {
+        "messageIds": [
+          "msg-user-1"
+        ],
+        "quotes": [
+          "with speed faster than human"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Tasks are executed in optimized order based on dependencies and priority",
+        "System tracks and displays execution time for each task",
+        "Performance benchmarks compare execution speed to typical human completion time"
+      ]
+    },
+    {
+      "id": "REQ-6",
+      "text": "Design a cohesive visual theme with vibrant botanical colors (greens, purples, warm earth tones) and organic flowing layouts that reflect growth and natural intelligence, applying this aesthetic consistently across all UI components",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-user-1"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Color palette uses botanical-inspired colors throughout the application",
+        "Typography and spacing create a modern, organic feel",
+        "Layout elements use smooth, natural flowing patterns",
+        "Visual style is consistent across all pages and components"
+      ]
+    }
+  ],
+  "constraints": [
+    "Must use Motoko for backend implementation",
+    "Must use React with TypeScript for frontend",
+    "All logic must reside in single main actor file",
+    "Cannot integrate external AI APIs or LLM services"
+  ],
+  "nonGoals": [
+    "Integration with external AI services (OpenAI, Anthropic, etc.)",
+    "Real-time WebSocket connections",
+    "Mobile app development",
+    "External database integration",
+    "Third-party authentication beyond Internet Identity"
+  ],
+  "imageRequirements": {
+    "required": [
+      "Organic flower logo with flowing petals in botanical green and purple gradient (flower-logo.dim_256x256.png)",
+      "Abstract background with subtle botanical patterns and soft flowing lines (hero-background.dim_1920x1080.png)"
+    ],
+    "edits": []
+  }
+}

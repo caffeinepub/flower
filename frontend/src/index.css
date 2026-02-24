@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --radius: 0.75rem;
+        
+        /* Botanical Green Palette */
+        --flower-green-50: 0.97 0.05 145;
+        --flower-green-100: 0.93 0.08 145;
+        --flower-green-200: 0.85 0.12 145;
+        --flower-green-300: 0.75 0.15 145;
+        --flower-green-400: 0.65 0.18 145;
+        --flower-green-500: 0.55 0.20 145;
+        --flower-green-600: 0.45 0.18 145;
+        --flower-green-700: 0.35 0.15 145;
+        --flower-green-800: 0.25 0.12 145;
+        --flower-green-900: 0.18 0.08 145;
+        
+        /* Botanical Purple Palette */
+        --botanical-purple-50: 0.95 0.05 310;
+        --botanical-purple-100: 0.90 0.08 310;
+        --botanical-purple-200: 0.82 0.12 310;
+        --botanical-purple-300: 0.72 0.15 310;
+        --botanical-purple-400: 0.62 0.18 310;
+        --botanical-purple-500: 0.52 0.20 310;
+        --botanical-purple-600: 0.42 0.18 310;
+        --botanical-purple-700: 0.32 0.15 310;
+        --botanical-purple-800: 0.24 0.12 310;
+        --botanical-purple-900: 0.16 0.08 310;
+        
+        /* Earth Warm Palette */
+        --earth-warm-50: 0.96 0.03 65;
+        --earth-warm-100: 0.92 0.05 65;
+        --earth-warm-200: 0.84 0.08 65;
+        --earth-warm-300: 0.74 0.10 65;
+        --earth-warm-400: 0.64 0.12 65;
+        --earth-warm-500: 0.54 0.14 65;
+        --earth-warm-600: 0.44 0.12 65;
+        --earth-warm-700: 0.34 0.10 65;
+        --earth-warm-800: 0.26 0.08 65;
+        --earth-warm-900: 0.18 0.05 65;
+        
+        /* Light Mode */
+        --background: 0.99 0.01 145;
+        --foreground: 0.20 0.02 145;
+        --card: 1 0 0;
+        --card-foreground: 0.20 0.02 145;
+        --popover: 1 0 0;
+        --popover-foreground: 0.20 0.02 145;
+        --primary: 0.45 0.18 145;
+        --primary-foreground: 0.99 0.01 145;
+        --secondary: 0.93 0.05 145;
+        --secondary-foreground: 0.25 0.12 145;
+        --muted: 0.95 0.03 145;
+        --muted-foreground: 0.50 0.05 145;
+        --accent: 0.93 0.05 310;
+        --accent-foreground: 0.25 0.12 310;
+        --destructive: 0.577 0.245 27.325;
+        --destructive-foreground: 0.99 0.01 145;
+        --border: 0.90 0.03 145;
+        --input: 0.90 0.03 145;
+        --ring: 0.45 0.18 145;
+        --chart-1: 0.55 0.20 145;
+        --chart-2: 0.52 0.20 310;
+        --chart-3: 0.54 0.14 65;
+        --chart-4: 0.65 0.18 145;
+        --chart-5: 0.62 0.18 310;
+    }
+
+    .dark {
+        --background: 0.15 0.02 145;
+        --foreground: 0.95 0.03 145;
+        --card: 0.20 0.03 145;
+        --card-foreground: 0.95 0.03 145;
+        --popover: 0.18 0.02 145;
+        --popover-foreground: 0.95 0.03 145;
+        --primary: 0.65 0.18 145;
+        --primary-foreground: 0.15 0.02 145;
+        --secondary: 0.25 0.05 145;
+        --secondary-foreground: 0.95 0.03 145;
+        --muted: 0.25 0.05 145;
+        --muted-foreground: 0.65 0.08 145;
+        --accent: 0.30 0.08 310;
+        --accent-foreground: 0.95 0.03 310;
+        --destructive: 0.60 0.22 27.325;
+        --destructive-foreground: 0.15 0.02 145;
+        --border: 0.30 0.05 145;
+        --input: 0.30 0.05 145;
+        --ring: 0.55 0.15 145;
+        --chart-1: 0.65 0.18 145;
+        --chart-2: 0.62 0.18 310;
+        --chart-3: 0.64 0.12 65;
+        --chart-4: 0.75 0.15 145;
+        --chart-5: 0.72 0.15 310;
+    }
+
+    * {
+        @apply border-border;
+    }
+    
+    body {
+        @apply bg-background text-foreground;
+        font-feature-settings: "rlig" 1, "calt" 1;
+    }
+}
+
+@layer utilities {
+    .text-balance {
+        text-wrap: balance;
+    }
+}

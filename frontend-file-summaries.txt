@@ -1,0 +1,15 @@
+{
+  "frontend/src/App.tsx": "Main application component that sets up TanStack Router with routes for dashboard and task submission, wrapped in ThemeProvider and includes Toaster for notifications.",
+  "frontend/src/components/Layout.tsx": "Root layout component that wraps all pages with navigation header and footer, includes caffeine.ai attribution with UTM tracking.",
+  "frontend/src/components/Navigation.tsx": "Responsive navigation component with logo, desktop menu, and mobile sheet menu, highlights active routes with botanical theme colors.",
+  "frontend/src/components/HeroSection.tsx": "Hero banner component with gradient background, app tagline, and call-to-action buttons for submitting tasks and viewing dashboard.",
+  "frontend/src/components/TaskCard.tsx": "Card component displaying individual task information with status badge, collapsible result section, and click handler for detailed view.",
+  "frontend/src/components/TaskList.tsx": "Task list component with filtering by task type, tabbed status views, empty states, and grid layout of task cards.",
+  "frontend/src/components/TaskDetailModal.tsx": "Modal dialog showing comprehensive task details including status, priority, attempts, user principal, and results with refresh functionality.",
+  "frontend/src/components/TaskSubmissionForm.tsx": "Form component for creating new tasks with task type selector, description textarea, validation, and submission handling.",
+  "frontend/src/pages/DashboardPage.tsx": "Main dashboard page displaying hero section, statistics cards for task counts and success rate, and task list with real-time updates.",
+  "frontend/src/pages/SubmitTaskPage.tsx": "Task submission page with back navigation, form component, and helpful tips section for better task descriptions.",
+  "frontend/src/hooks/useQueries.ts": "Custom React Query hooks for fetching tasks, creating tasks, and refreshing task data with automatic cache invalidation.",
+  "frontend/src/index.css": "Global styles with botanical color palette (greens, purples, earth tones) in OKLCH format for both light and dark modes.",
+  "frontend/tailwind.config.js": "Tailwind configuration extended with botanical color palettes (flowerGreen, botanicalPurple, earthWarm), custom border radius values, and organic shadows."
+}

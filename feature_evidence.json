@@ -1,0 +1,70 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-create-a-task-submission-interface-where-users-can-input-instructions-for-ai-to-execute-human-activities",
+      "featureTitle": "Create a task submission interface where users can input instructions for AI to execute human activities",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/TaskSubmissionForm.tsx",
+        "frontend/src/pages/SubmitTaskPage.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-build-task-dashboard-displaying-submitted-tasks-their-status-and-execution-results-in-real-time",
+      "featureTitle": "Build task dashboard displaying submitted tasks, their status, and execution results in real-time",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/TaskCard.tsx",
+        "frontend/src/components/TaskDetailModal.tsx",
+        "frontend/src/components/TaskList.tsx",
+        "frontend/src/pages/DashboardPage.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-4"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-design-a-cohesive-visual-theme-with-vibrant-botanical-colors-greens-purples-warm-earth-tones-and-organic-flowing-layouts-that-reflect-growth-and-natural-intelligence-applying-this-aesthetic-consistently-across-all-ui-components",
+      "featureTitle": "Design a cohesive visual theme with vibrant botanical colors (greens, purples, warm earth tones) and organic flowing layouts that reflect growth and natural intelligence, applying this aesthetic consistently across all UI components",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/HeroSection.tsx",
+        "frontend/src/components/Layout.tsx",
+        "frontend/src/components/Navigation.tsx",
+        "frontend/src/index.css",
+        "frontend/tailwind.config.js"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-6"
+      ],
+      "confidence": "high"
+    }
+  ]
+}
